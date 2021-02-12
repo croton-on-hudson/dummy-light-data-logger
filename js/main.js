@@ -38,5 +38,20 @@ $( () => {
         $('.map').rotate(rotation); // rotate the map
         $('.btn-primary, .point').rotate(-rotation) //unrotate the buttons
     })
-        
+
+    /* detect query string to invert colors */
+    const field = 'robert';
+    let present = false
+    const url = window.location.href;
+    if(url.indexOf('?' + field) != -1)
+        present = true
+    else if(url.indexOf('&' + field) != -1)
+        present = true
+    console.log(present)
+    if (present) {
+        // invert the colors
+        $('.btn-green').css('background-color', 'red')
+        $('.btn-red').css('background-color', 'green')
+    }
+
 })
