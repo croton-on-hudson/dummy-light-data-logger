@@ -1,0 +1,67 @@
+* {
+    font-family: helvetica;
+}
+.map {
+    position: relative;
+    background-image: url(../images/map.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+.rotate {
+    position: relative;
+    z-index: 10;
+}
+h1 .timer {
+    float: right;
+    font-size: 0.65em;
+}
+h2 {
+    font-size: 0.75em;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.rotate {
+    width: 50px;
+    cursor: pointer;
+}
+.btn-primary {
+    padding: 15px;
+    min-width: 70px;
+}
+.btn-red, .btn-red:active, .btn-red:hover, .btn-red:focus {
+    background-color: red;
+}
+.btn-orange, .btn-orange:active, .btn-orange:hover, .btn-orange:focus {
+    background-color: orange;
+}
+.btn-green, .btn-green:active, .btn-green:hover, .btn-green:focus {
+    background-color: green;
+}
+
+.red {
+    color: red;
+}
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
+/* locations */
+.grand_east {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+}
+.grand_west {
+    position: absolute;
+    right: 30%;
+    top: 10%;
+}
+.opn {
+    position: absolute;
+    right: 20%;
+    bottom: 15vh;
+}
